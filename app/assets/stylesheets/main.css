@@ -2277,6 +2277,7 @@
 				border-radius: 0;
 				display: block;
 				width: 100%;
+                height: 500px;
 			}
 
 			.box .image.featured:first-child {
@@ -3028,12 +3029,9 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("../../images/backgrnd.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+      background-image: url(bckgv2.jpg);
+		
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
@@ -3170,14 +3168,14 @@
 /* CTA */
 
 	#cta {
-		background: #e89980;
+		background: #3c578b;
 		color: #f9e5df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
 
-		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
-			color: inherit;
+		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6,#cta p {
+			color: #fff;
 		}
 
 		#cta form {
@@ -3192,7 +3190,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: #fff;
-			color: #e89980;
+		    color: #3c578b;
 		}
 
 		#cta input[type="text"],
