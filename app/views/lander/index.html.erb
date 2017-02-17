@@ -23,8 +23,7 @@
 						<header class="major">
 							<h2>Introducing the ultimate way
 							to <br />elevate and convey your business to a new level.</h2>
-							<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
-							adipiscing nunc adipiscing. Condimentum turpis massa.</p>
+							<p>Learning how to effectively communicate and your conveyed message will always be part of the trend.</p>
 							
 					<section class="box special features">
 						<div class="features-row">
@@ -73,7 +72,7 @@
 						<div class="6u 12u(narrower)">
 
 							<section class="box special">
-								<span class="image featured"><%= image_tag("pic02.jpg") %></span>
+								<span class="image featured"><%= image_tag("waves.png") %></span>
 								<h3>NB Waves</h3>
 								<p>GM Communications is ran by Gideon and currently </p>
 								<ul class="actions">
@@ -85,9 +84,9 @@
 						<div class="6u 12u(narrower)">
 
 							<section class="box special">
-								<span class="image featured"><%= image_tag("pic03.jpg") %></span>
+								<span class="image featured"><%= image_tag("podcastFMv1.png") %></span>
 								<h3>Podcast.FM</h3>
-								<p>Podcast.FM is an upcoming project that is aimed at uplifing local artists and the kinds of artists of that we aime come from  all over. Hosting Instrument Players, singers, painters and more. The vision doesn't stop there either. (now i sound like billy mays in a commercial shouting "but wait theres more"). On a serious note we aim to move on to other locations throughout the states</p>
+								<p><%= @work.description.truncate(60, separator: /\w/).html_safe %></p>
 								<ul class="actions">
 									<li><a href="#" class="button alt">Learn More</a></li>
 								</ul>
