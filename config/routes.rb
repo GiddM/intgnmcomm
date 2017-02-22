@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :profiles
+  resources :moneyposts
+  resources :gposts
   devise_for :users, controllers: {
         sessions: 'users/sessions'
       }
