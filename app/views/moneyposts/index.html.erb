@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Moneyposts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @moneyposts.each do |moneypost| %>
+      <tr>
+        <td><%= moneypost.address %></td>
+        <td><%= moneypost.type %></td>
+        <td><%= moneypost.price %></td>
+        <td><%= moneypost.description %></td>
+        <td><%= moneypost.image_url %></td>
+        <td><%= link_to 'Show', moneypost %></td>
+        <td><%= link_to 'Edit', edit_moneypost_path(moneypost) %></td>
+        <td><%= link_to 'Destroy', moneypost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Moneypost', new_moneypost_path %>

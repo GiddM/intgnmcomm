@@ -1,0 +1,1 @@
+json.partial! "moneyposts/moneypost", moneypost: @moneypost

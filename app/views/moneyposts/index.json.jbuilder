@@ -1,0 +1,1 @@
+json.array! @moneyposts, partial: 'moneyposts/moneypost', as: :moneypost

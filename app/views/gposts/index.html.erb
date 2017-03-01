@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gposts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gposts.each do |gpost| %>
+      <tr>
+        <td><%= gpost.address %></td>
+        <td><%= gpost.type %></td>
+        <td><%= gpost.price %></td>
+        <td><%= gpost.description %></td>
+        <td><%= gpost.image_url %></td>
+        <td><%= link_to 'Show', gpost %></td>
+        <td><%= link_to 'Edit', edit_gpost_path(gpost) %></td>
+        <td><%= link_to 'Destroy', gpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gpost', new_gpost_path %>
