@@ -1,0 +1,2 @@
+class Moneypost < ApplicationRecord
+end

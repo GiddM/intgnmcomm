@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @gpost.address %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @gpost.type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @gpost.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @gpost.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @gpost.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_gpost_path(@gpost) %> |
+<%= link_to 'Back', gposts_path %>

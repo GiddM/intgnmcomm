@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @moneypost.address %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @moneypost.type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @moneypost.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @moneypost.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @moneypost.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_moneypost_path(@moneypost) %> |
+<%= link_to 'Back', moneyposts_path %>

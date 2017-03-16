@@ -1,0 +1,2 @@
+class Gpost < ApplicationRecord
+end
